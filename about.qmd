@@ -1,8 +1,8 @@
 ---
 title: About
-image: DSC_9263.jpg
+image: profile.jpg
 about:
-  template: pics
+  template: jolla
 ---
 
 About this blog

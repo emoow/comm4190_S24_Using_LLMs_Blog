@@ -1,5 +1,5 @@
 ---
-title: Emoo's hunting with LLMs
+title: My Explorations with LLMs
 listing:
   contents: posts
   sort: date desc
