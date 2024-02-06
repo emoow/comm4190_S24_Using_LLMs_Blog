@@ -1,6 +1,6 @@
 ---
 title: About
-image: profile.jpg
+image: DSC_9263.jpg
 about:
   template: jolla
 ---
