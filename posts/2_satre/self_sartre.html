@@ -20,27 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +100,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Emoo and LLMs</span>
     </a>
   </div>
@@ -149,7 +123,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -165,146 +139,40 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Emoo and LLMs</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="logic">logic <span class="quarto-category-count">(2)</span></div><div class="category" data-category="prompting">prompting <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<div id="76064eac-7177-44c8-86b7-844d8cdb7a6c" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title: <span class="st">"Self of Sartre"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>description: <span class="st">"An article abour the self of Sartre"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>author: <span class="st">"Desperate Emoo"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>date: <span class="st">"2/8/2024"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>categories:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> Philosophy</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> Sartre</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> Existence</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>The Self According to Sartre</strong></p>
+<p>In the philosophical framework delineated by Jean-Paul Sartre, the conceptualization of self is intricately articulated primarily through seminal treatises such as “The Transcendence of the Ego” and “Being and Nothingness.” This essay endeavors to explicate a nuanced definition of the self, utilizing illustrative examples to enhance conceptual clarity, and delving into the consequential significance that underlies the conceptualization of the self within Sartrean existentialist thought. <img src="self_sartre_files/figure-html/fadc1a99-92a4-4ba0-a6a2-dedd73f1c034-1-360ebafe-4d54-4826-9447-d22f3cb169d6.jpeg" class="img-fluid" alt="sartre.jpeg"></p>
+<p>To begin, the understanding of self encompasses two core concepts: the “I” (Je) and the “Me” (Moi).</p>
+<p>The term “I” pertains to the immediate and subjective experience of one’s self—an aware and present state wherein active engagement with the world occurs, choices are made, and an uninterrupted stream of consciousness is experienced.For instance, when individuals find themselves wholly engrossed in an activity, navigating it without self-consciousness, this signifies the active manifestation of the “I.” This immediate engagement showcases the unmediated encounter with being, illustrating the intrinsic nature of the “I.”Moreover, as individuals delve into the realm of philosophy without overtly acknowledging their own existence, it exemplifies the continual presence of the “I” within intellectual pursuits. This sustained engagement highlights the capacity of the “I” to persist beyond immediate experiences and actively participate in cognitive endeavors.In essence, the “I” encapsulates the immediate and unmediated encounter with being, both in the realm of visceral experiences and intellectual pursuits. The coexistence of these facets underscores the dynamic nature of the “I” as a subjective, conscious entity, shaping and responding to various aspects of human existence. “I” is not only the subject experiencing consciousness but can also become an object of awareness. In other words, the self can reflect upon itself, turning its attention inward. Thus self-awareness is an ongoing process. The self, as a subject, reflects on itself, but this act of reflection becomes a new object of awareness, leading to a perpetual cycle of self-awareness.</p>
+<p>Jean-Paul Sartre directs his attention primarily to the inquiry of whether an “I” exists within the context of the phrase “I think.” Drawing from Husserl’s phenomenology, Sartre challenges Kant’s notion that “the I Think must be able to accompany all our representations.” In essence, he contends that the presence of a transcendental “I” is unnecessary in the framework of absolute consciousness.Sartre posits a critical reflection: “If the I is a part of consciousness, there would then be two I’s: the I of the reflective consciousness and the I of the reflected consciousness” (Sartre, 1960). This inherent duality suggests a requisite for an additional layer of self-awareness or “I” to acknowledge and harmonize these two dimensions. Consequently, Sartre introduces the concept of the “Me” as an integral element in this intricate structure of self-consciousness.The crux of Sartre’s argument lies in the intricate relationship between the reflective and reflected consciousness, necessitating a nuanced understanding of the self. The introduction of the “Me” serves to elucidate the multiplicity inherent in self-awareness, navigating the complex interplay between the observer and the observed within the realm of consciousness.</p>
+<p>The concept of the “Me” in Sartrean philosophy encapsulates the self as an object, subject to observation, reflection, and conceptualization. This facet of the self is characterized by a deliberate distancing or objectification, signifying that it is not an immediate experience but involves a certain level of detachment. When individuals engage in retrospection, recognizing themselves as the agents of past actions, this exemplifies the “Me” in action, entailing a mode of self-observation and conceptualization. Within Sartre’s discourse on the “Me,” consciousness assumes the role of the object under observation, establishing a recursive loop of self-consciousness—what he terms the “I think of I think of ‘I’.” In this construct, the “Me” is the observed, distinct from the observer. Sartre’s philosophy rejects the notion of a fixed center within the self, positing instead that the self is in a constant state of flux and redefinition through its myriad experiences. As the self is reflected upon or observed by consciousness, certain aspects, such as memories, recognitions, and conceptualizations, constitute the components of the “Me”. This nuanced perspective introduces a temporal and reflective dimension, facilitating introspection and self-examination. For instance, envision a person contemplating their own behavior—an introspective moment where the individual’s ego becomes the object of consciousness. Through this evaluative process, the person recognizes the malleability of the self, realizing that it is not a static essence but an ongoing process of self-examination.In summary, the “Me” in Sartre’s philosophy embodies the observed self, characterized by a deliberate distancing and a continuous process of self-consciousness. This perspective challenges notions of a fixed self, emphasizing the dynamic nature of personal identity shaped through reflection and consciousness.</p>
+<p>The process of self-consciousness facilitates meaningful engagement with the external world. Rather than being confined within its own thoughts, the self is directed towards objects, ideas, and others. Consider a person seated in a cafe, attentively observing the people and surroundings. In this scenario, the person’s consciousness extends beyond itself, actively engaging with the external stimuli—sounds, colors, and interactions. All actions exemplify a kind of dependence on knowing what it is that I am doing as I am doing it. This exemplifies that the self is not an isolated entity but maintains a continual relationship with its environment.The coherence and significance of actions stem from the deliberate thoughts and intentions of the agent. Whether contemplating future actions, actively involved in the present, or reflecting on past deeds, the conscious thought process plays a pivotal role in shaping the structure and purpose of human actions. In essence, this underscores the significance of mental processes and conscious planning in the manifestation of intentional actions.Simultaneously, actions transcend mere outcomes of internal mental states; they are profound expressions of intentional thought. This viewpoint posits that the execution of an action is intricately linked to antecedent thoughts or intentions, underscoring the conscious and purposeful nature of human agency. It emphasizes that actions, far from being arbitrary events, carry inherent meaning derived from the agent’s deliberate thoughts. These observations underscore the critical role of conscious thought and intentionality in shaping and delineating human actions. Jean-Paul Sartre vehemently rejects the notion that actions are haphazard sequences of disconnected events triggered by internal mental states. Instead, he asserts that actions are purposeful and meaningful expressions of the agent’s thoughts and intentions, advocating for a deeper understanding of the deliberate nature of human agency.</p>
+<p>In the comprehensive exploration of human action, Jean-Paul Sartre transitions to a pivotal discourse on freedom and responsibility. Central to Sartre’s philosophy is the assertion of profound freedom inherent in the self, albeit accompanied by the weighty burden of responsibility. This philosophical stance posits that individuals bear responsibility not only for their choices and actions but also for ascribing meaning to their existence. Consider a practical scenario illustrating this symbiosis of freedom and responsibility: envision a person confronted with a moral dilemma. The expansive realm of their freedom empowers them to make choices, yet this very freedom imposes the responsibility of determining the ethical course of action. In this context, the self, exercising its freedom, actively constructs its moral framework, highlighting the dynamic interplay between personal agency and the ethical dimensions of decision-making. Sartre’s elucidation of freedom extends beyond mere autonomy; it involves the creation and ownership of one’s moral universe. The imperative here is that individuals, in the exercise of their freedom, concurrently shoulder the responsibility of navigating the moral terrain, thus shaping the ethical contours of their existence. In conclusion, Sartre’s philosophical framework underscores the inseparable connection between freedom and responsibility. This interdependence compels individuals not only to exercise their freedom in decision-making but also to confront the consequential responsibility of imbuing their actions with meaning and ethical significance.</p>
 
 
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1707424889963" data-listing-reading-time-sort="7" data-listing-word-count-sort="1266">
-<div class="thumbnail">
-<p><a href="./posts/2_satre/self_sartre.html" class="no-external"></a></p><a href="./posts/2_satre/self_sartre.html" class="no-external">
-<p class="card-img-top"><img src="posts/2_satre/self_sartre_files/figure-html/fadc1a99-92a4-4ba0-a6a2-dedd73f1c034-1-360ebafe-4d54-4826-9447-d22f3cb169d6.jpeg" alt="sartre.jpeg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2_satre/self_sartre.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2_satre/self_sartre.html" class="no-external"></a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2_satre/self_sartre.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2_satre/self_sartre.html" class="no-external"><strong>The Self According to Sartre</strong></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2_satre/self_sartre.html" class="no-external"></a></p><a href="./posts/2_satre/self_sartre.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="LLMs,prompting,logic" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1707424890067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/my_first_post/firstpost.html" class="no-external"></a></p><a href="./posts/my_first_post/firstpost.html" class="no-external">
-<p class="card-img-top"><img src="posts/my_first_post/DSC_9261.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/my_first_post/firstpost.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/my_first_post/firstpost.html" class="no-external">Fisrt post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/my_first_post/firstpost.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('logic'); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/my_first_post/firstpost.html" class="no-external">An attempt</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/my_first_post/firstpost.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-Desperate Emoo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="LLMs,prompting,logic" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1707424889959" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./posts/000_test_post/index.html" class="no-external"></a></p><a href="./posts/000_test_post/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/000_test_post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/000_test_post/index.html" class="no-external">A test post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/000_test_post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('logic'); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/000_test_post/index.html" class="no-external">An example post from a Jupyter notebook</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/000_test_post/index.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-An LLM User
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
