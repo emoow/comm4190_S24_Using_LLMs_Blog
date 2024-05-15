@@ -1,71 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2024-05-15T10:47:48.834Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/Max-weber/max.html</loc>
-    <lastmod>2024-05-15T10:47:48.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/prompt_language/prompt_language.html</loc>
-    <lastmod>2024-05-15T10:47:50.202Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2024-05-15T10:47:48.838Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/campaign/egg_allergies.html</loc>
-    <lastmod>2024-05-15T10:47:49.402Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/self criteria/self_prompted_AI.html</loc>
-    <lastmod>2024-05-15T10:47:50.222Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/2_satre/self_sartre.html</loc>
-    <lastmod>2024-05-15T10:47:48.838Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/sono/sono.html</loc>
-    <lastmod>2024-05-15T10:47:50.294Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/about.html</loc>
-    <lastmod>2024-05-15T10:47:48.834Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/Myths of Rules/Myths_of_rules.html</loc>
-    <lastmod>2024-05-15T10:47:49.322Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/metaso/metaso.html</loc>
-    <lastmod>2024-05-15T10:47:49.998Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/google_doodle/doodle.html</loc>
-    <lastmod>2024-05-15T10:47:49.418Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/ABM/ABM.html</loc>
-    <lastmod>2024-05-15T10:47:48.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/my_first_post/firstpost.html</loc>
-    <lastmod>2024-05-15T10:47:50.050Z</lastmod>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/occupation_gender_bias/job_gender_bias.html</loc>
+    <lastmod>2024-05-15T23:44:15.490Z</lastmod>
   </url>
   <url>
     <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/man_in_dress/pinkdress.html</loc>
-    <lastmod>2024-05-15T10:47:49.810Z</lastmod>
+    <lastmod>2024-05-15T23:44:15.202Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/sono/sono.html</loc>
+    <lastmod>2024-05-15T23:44:15.690Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/campaign/egg_allergies.html</loc>
+    <lastmod>2024-05-15T23:44:14.486Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/my_first_post/firstpost.html</loc>
+    <lastmod>2024-05-15T23:44:15.446Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/metaso/metaso.html</loc>
+    <lastmod>2024-05-15T23:44:15.394Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
+    <lastmod>2024-05-15T23:44:13.922Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/google_doodle/doodle.html</loc>
+    <lastmod>2024-05-15T23:44:14.814Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/index.html</loc>
+    <lastmod>2024-05-15T23:44:13.922Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/about.html</loc>
+    <lastmod>2024-05-15T23:44:13.922Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/dream_depict_floyd/dream.html</loc>
+    <lastmod>2024-05-15T23:44:14.814Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/self criteria/self_prompted_AI.html</loc>
+    <lastmod>2024-05-15T23:44:15.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/2_satre/self_sartre.html</loc>
+    <lastmod>2024-05-15T23:44:13.922Z</lastmod>
   </url>
   <url>
     <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/3.15vsPi/Pi.html</loc>
-    <lastmod>2024-05-15T10:47:48.866Z</lastmod>
+    <lastmod>2024-05-15T23:44:13.950Z</lastmod>
   </url>
   <url>
-    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/occupation_gender_bias/job_gender_bias.html</loc>
-    <lastmod>2024-05-15T10:47:50.094Z</lastmod>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/Myths of Rules/Myths_of_rules.html</loc>
+    <lastmod>2024-05-15T23:44:14.406Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/Max-weber/max.html</loc>
+    <lastmod>2024-05-15T23:44:13.958Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/ABM/ABM.html</loc>
+    <lastmod>2024-05-15T23:44:13.954Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emoow.github.io/comm4190_S24_Using_LLMs_Blog/posts/prompt_language/prompt_language.html</loc>
+    <lastmod>2024-05-15T23:44:15.594Z</lastmod>
   </url>
 </urlset>
