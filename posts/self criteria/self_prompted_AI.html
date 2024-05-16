@@ -156,9 +156,383 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Can we make LLMs to prompt itself and refine its prompt using its own criteria to realize self improvement?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachment:974e0853-8a5e-4403-aefe-63740b6b5cc2.png" class="img-fluid figure-img"></p>
+<figcaption>DALL·E 2024-05-16 08.56.44 - A surreal, imaginative scene where an artificial intelligence is depicted as a futuristic humanoid robot with a digital face, standing in front of a l.png</figcaption>
+</figure>
+</div>
+<section id="can-we-make-llms-to-prompt-itself-and-refine-its-prompt-using-its-own-criteria-to-realize-self-improvement" class="level3">
+<h3 class="anchored" data-anchor-id="can-we-make-llms-to-prompt-itself-and-refine-its-prompt-using-its-own-criteria-to-realize-self-improvement">Can we make LLMs to prompt itself and refine its prompt using its own criteria to realize self improvement?</h3>
+<p>Creating a good GPT prompt involves clarity, context, specificity, and structure. Here are some guidelines to help you craft effective prompts:</p>
+</section>
+<section id="be-clear-and-concise" class="level3">
+<h3 class="anchored" data-anchor-id="be-clear-and-concise">1. Be Clear and Concise</h3>
+<ul>
+<li><strong>Specific Request</strong>: Clearly state what you want. Avoid ambiguous language.
+<ul>
+<li><strong>Example</strong>: Instead of “Tell me about AI,” say “Explain the history and development of artificial intelligence from the 1950s to the present.”</li>
+</ul></li>
+</ul>
+</section>
+<section id="provide-context" class="level3">
+<h3 class="anchored" data-anchor-id="provide-context">2. Provide Context</h3>
+<ul>
+<li><strong>Background Information</strong>: Give enough context so the model understands the scope of the request.
+<ul>
+<li><strong>Example</strong>: “For a presentation to high school students, explain the basic concepts of machine learning in simple terms.”</li>
+</ul></li>
+</ul>
+</section>
+<section id="ask-direct-questions" class="level3">
+<h3 class="anchored" data-anchor-id="ask-direct-questions">3. Ask Direct Questions</h3>
+<ul>
+<li><strong>Focused Queries</strong>: Ask specific questions to get precise answers.
+<ul>
+<li><strong>Example</strong>: “What are the main differences between supervised and unsupervised learning?”</li>
+</ul></li>
+</ul>
+</section>
+<section id="set-the-tone-and-style" class="level3">
+<h3 class="anchored" data-anchor-id="set-the-tone-and-style">4. Set the Tone and Style</h3>
+<ul>
+<li><strong>Desired Style</strong>: Specify the tone, style, or format you want.
+<ul>
+<li><strong>Example</strong>: “Write a humorous story about a day in the life of a robot.”</li>
+</ul></li>
+</ul>
+</section>
+<section id="use-examples" class="level3">
+<h3 class="anchored" data-anchor-id="use-examples">5. Use Examples</h3>
+<ul>
+<li><strong>Illustrate Requests</strong>: Provide examples to clarify your needs.
+<ul>
+<li><strong>Example</strong>: “Generate a professional email response to a job offer, similar to this: [include example].”</li>
+</ul></li>
+</ul>
+</section>
+<section id="limit-the-scope" class="level3">
+<h3 class="anchored" data-anchor-id="limit-the-scope">6. Limit the Scope</h3>
+<ul>
+<li><strong>Specificity</strong>: Narrow down broad topics to specific aspects.
+<ul>
+<li><strong>Example</strong>: Instead of “Discuss climate change,” say “Explain the impact of climate change on polar bear populations.”</li>
+</ul></li>
+</ul>
+</section>
+<section id="use-proper-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="use-proper-formatting">7. Use Proper Formatting</h3>
+<ul>
+<li><strong>Organized Prompts</strong>: Break down complex requests into bullet points or numbered lists.
+<ul>
+<li><strong>Example</strong>:
+<ol type="1">
+<li>“Describe the main features of Python programming language.”</li>
+<li>“Give examples of its applications in data science.”</li>
+</ol></li>
+</ul></li>
+</ul>
+</section>
+<section id="examples-of-good-prompts" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-good-prompts">Examples of Good Prompts</h3>
+<ol type="1">
+<li><strong>Descriptive Prompt</strong>
+<ul>
+<li>“Describe the economic impact of the COVID-19 pandemic on small businesses in the United States.”</li>
+</ul></li>
+<li><strong>Creative Prompt</strong>
+<ul>
+<li>“Write a short sci-fi story about humans colonizing Mars and encountering alien life.”</li>
+</ul></li>
+<li><strong>Technical Prompt</strong>
+<ul>
+<li>“Explain the difference between deterministic and stochastic models in operations research.”</li>
+</ul></li>
+<li><strong>Instructive Prompt</strong>
+<ul>
+<li>“Provide a step-by-step guide on how to set up a WordPress blog for beginners.”</li>
+</ul></li>
+<li><strong>Comparative Prompt</strong>
+<ul>
+<li>“Compare and contrast the leadership styles of Steve Jobs and Elon Musk.”</li>
+</ul></li>
+</ol>
+<p>By following these guidelines, you can create effective GPT prompts that yield informative and relevant responses.</p>
+</section>
+<section id="then-i-prompt-a-criteria-of-score-0-10-to-evaluate-how-good-a-prompt-is." class="level3">
+<h3 class="anchored" data-anchor-id="then-i-prompt-a-criteria-of-score-0-10-to-evaluate-how-good-a-prompt-is.">Then I prompt a criteria of score 0-10 to evaluate how good a prompt is.</h3>
+<p>Evaluating the quality of a prompt can be done using a set of criteria, each scored on a scale from 0 to 10. Here are the criteria with descriptions:</p>
+</section>
+<section id="clarity" class="level3">
+<h3 class="anchored" data-anchor-id="clarity">1. Clarity</h3>
+<ul>
+<li><strong>Description</strong>: Is the prompt clear and easy to understand?</li>
+<li><strong>Score 0-10</strong>: 0 (very confusing) to 10 (perfectly clear)</li>
+</ul>
+</section>
+<section id="context" class="level3">
+<h3 class="anchored" data-anchor-id="context">2. Context</h3>
+<ul>
+<li><strong>Description</strong>: Does the prompt provide enough background information for the model to understand the scope?</li>
+<li><strong>Score 0-10</strong>: 0 (no context) to 10 (excellent context)</li>
+</ul>
+</section>
+<section id="specificity" class="level3">
+<h3 class="anchored" data-anchor-id="specificity">3. Specificity</h3>
+<ul>
+<li><strong>Description</strong>: Is the prompt specific enough to get a precise response?</li>
+<li><strong>Score 0-10</strong>: 0 (very vague) to 10 (highly specific)</li>
+</ul>
+</section>
+<section id="directness" class="level3">
+<h3 class="anchored" data-anchor-id="directness">4. Directness</h3>
+<ul>
+<li><strong>Description</strong>: Does the prompt ask direct questions or make direct requests?</li>
+<li><strong>Score 0-10</strong>: 0 (very indirect) to 10 (very direct)</li>
+</ul>
+</section>
+<section id="tone-and-style" class="level3">
+<h3 class="anchored" data-anchor-id="tone-and-style">5. Tone and Style</h3>
+<ul>
+<li><strong>Description</strong>: Does the prompt specify the desired tone, style, or format?</li>
+<li><strong>Score 0-10</strong>: 0 (no tone/style specified) to 10 (tone/style clearly specified)</li>
+</ul>
+</section>
+<section id="examples" class="level3">
+<h3 class="anchored" data-anchor-id="examples">6. Examples</h3>
+<ul>
+<li><strong>Description</strong>: Does the prompt provide examples to illustrate the request?</li>
+<li><strong>Score 0-10</strong>: 0 (no examples) to 10 (excellent examples provided)</li>
+</ul>
+</section>
+<section id="scope-limitation" class="level3">
+<h3 class="anchored" data-anchor-id="scope-limitation">7. Scope Limitation</h3>
+<ul>
+<li><strong>Description</strong>: Does the prompt narrow down broad topics to specific aspects?</li>
+<li><strong>Score 0-10</strong>: 0 (very broad) to 10 (well-defined scope)</li>
+</ul>
+</section>
+<section id="formatting" class="level3">
+<h3 class="anchored" data-anchor-id="formatting">8. Formatting</h3>
+<ul>
+<li><strong>Description</strong>: Is the prompt well-organized, using bullet points or lists where necessary?</li>
+<li><strong>Score 0-10</strong>: 0 (poorly formatted) to 10 (well-organized)</li>
+</ul>
+</section>
+<section id="relevance" class="level3">
+<h3 class="anchored" data-anchor-id="relevance">9. Relevance</h3>
+<ul>
+<li><strong>Description</strong>: Is the prompt relevant to the intended use or audience?</li>
+<li><strong>Score 0-10</strong>: 0 (not relevant) to 10 (highly relevant)</li>
+</ul>
+</section>
+<section id="creativity-if-applicable" class="level3">
+<h3 class="anchored" data-anchor-id="creativity-if-applicable">10. Creativity (if applicable)</h3>
+<ul>
+<li><strong>Description</strong>: Does the prompt encourage creative or unique responses (for creative tasks)?</li>
+<li><strong>Score 0-10</strong>: 0 (not creative) to 10 (very creative)</li>
+</ul>
+</section>
+<section id="evaluation-example" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-example">Evaluation Example</h3>
+<p><strong>Prompt Example</strong>: “Write a humorous story about a robot who learns to cook and ends up becoming a celebrity chef.”</p>
+<section id="scoring" class="level4">
+<h4 class="anchored" data-anchor-id="scoring">Scoring</h4>
+<ol type="1">
+<li><strong>Clarity</strong>: 10 (very clear)</li>
+<li><strong>Context</strong>: 8 (some context provided)</li>
+<li><strong>Specificity</strong>: 9 (specific task)</li>
+<li><strong>Directness</strong>: 10 (direct request)</li>
+<li><strong>Tone and Style</strong>: 10 (humorous tone specified)</li>
+<li><strong>Examples</strong>: 0 (no examples given)</li>
+<li><strong>Scope Limitation</strong>: 9 (well-defined scope)</li>
+<li><strong>Formatting</strong>: 8 (clear but could be listed)</li>
+<li><strong>Relevance</strong>: 10 (relevant for creative writing)</li>
+<li><strong>Creativity</strong>: 10 (very creative task)</li>
+</ol>
+</section>
+<section id="total-score-84100" class="level4">
+<h4 class="anchored" data-anchor-id="total-score-84100">Total Score: 84/100</h4>
+<p>This prompt scores highly in most categories, making it an effective and high-quality prompt for generating a humorous story about a robot learning to cook.</p>
+</section>
+</section>
+<section id="please-give-me-three-example-prompts-to-generate-a-post-about-llms" class="level3">
+<h3 class="anchored" data-anchor-id="please-give-me-three-example-prompts-to-generate-a-post-about-llms">Please give me three example prompts to generate a post about LLMs</h3>
+<p>Here are three example prompts to generate a post about Large Language Models (LLMs):</p>
+</section>
+<section id="prompt-1-informative-overview" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1-informative-overview">Prompt 1: Informative Overview</h3>
+<p>“Write a detailed post explaining what Large Language Models (LLMs) are, including their history, development, key features, and applications in various industries. Make sure to highlight the significance of LLMs in modern AI research and provide examples of popular LLMs such as GPT-4, BERT, and T5.”</p>
+</section>
+<section id="prompt-2-technical-deep-dive" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-2-technical-deep-dive">Prompt 2: Technical Deep Dive</h3>
+<p>“Create a technical blog post that delves into the architecture and functioning of Large Language Models (LLMs). Discuss how LLMs are trained, the underlying neural network structures, and the challenges faced during their development. Include discussions on concepts like transformers, attention mechanisms, and fine-tuning, using examples from well-known models like GPT-4 and BERT.”</p>
+</section>
+<section id="prompt-3-impact-and-ethical-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-3-impact-and-ethical-considerations">Prompt 3: Impact and Ethical Considerations</h3>
+<p>“Write a comprehensive post discussing the impact of Large Language Models (LLMs) on society and the ethical considerations associated with their use. Cover topics such as data privacy, potential biases in LLMs, and the implications for various sectors like healthcare, education, and entertainment. Include real-world examples and potential solutions to address ethical challenges.”</p>
+<p>These prompts provide a clear focus, context, and specific aspects to cover, ensuring that the generated posts are informative, relevant, and engaging.</p>
+</section>
+<section id="evaluate-them-using-the-given-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="evaluate-them-using-the-given-criteria">Evaluate them using the given criteria</h3>
+<p>Let’s evaluate each prompt using the criteria provided, scoring each criterion from 0 to 10.</p>
+</section>
+<section id="prompt-1-informative-overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1-informative-overview-1">Prompt 1: Informative Overview</h3>
+<p>“Write a detailed post explaining what Large Language Models (LLMs) are, including their history, development, key features, and applications in various industries. Make sure to highlight the significance of LLMs in modern AI research and provide examples of popular LLMs such as GPT-4, BERT, and T5.”</p>
+<section id="scoring-1" class="level4">
+<h4 class="anchored" data-anchor-id="scoring-1">Scoring</h4>
+<ol type="1">
+<li><strong>Clarity</strong>: 10 (very clear)</li>
+<li><strong>Context</strong>: 9 (provides good background information)</li>
+<li><strong>Specificity</strong>: 9 (specific aspects like history, development, features, applications)</li>
+<li><strong>Directness</strong>: 10 (direct request)</li>
+<li><strong>Tone and Style</strong>: 8 (detailed but tone/style not explicitly mentioned)</li>
+<li><strong>Examples</strong>: 10 (provides specific examples like GPT-4, BERT, T5)</li>
+<li><strong>Scope Limitation</strong>: 9 (well-defined scope covering multiple aspects)</li>
+<li><strong>Formatting</strong>: 8 (clear but not in list format)</li>
+<li><strong>Relevance</strong>: 10 (relevant to understanding LLMs)</li>
+<li><strong>Creativity</strong>: 7 (informative but not highly creative)</li>
+</ol>
+</section>
+<section id="total-score-90100" class="level4">
+<h4 class="anchored" data-anchor-id="total-score-90100">Total Score: 90/100</h4>
+</section>
+</section>
+<section id="prompt-2-technical-deep-dive-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-2-technical-deep-dive-1">Prompt 2: Technical Deep Dive</h3>
+<p>“Create a technical blog post that delves into the architecture and functioning of Large Language Models (LLMs). Discuss how LLMs are trained, the underlying neural network structures, and the challenges faced during their development. Include discussions on concepts like transformers, attention mechanisms, and fine-tuning, using examples from well-known models like GPT-4 and BERT.”</p>
+<section id="scoring-2" class="level4">
+<h4 class="anchored" data-anchor-id="scoring-2">Scoring</h4>
+<ol type="1">
+<li><strong>Clarity</strong>: 10 (very clear)</li>
+<li><strong>Context</strong>: 9 (provides good technical context)</li>
+<li><strong>Specificity</strong>: 10 (specific technical aspects covered)</li>
+<li><strong>Directness</strong>: 10 (direct request)</li>
+<li><strong>Tone and Style</strong>: 9 (technical but tone/style not explicitly mentioned)</li>
+<li><strong>Examples</strong>: 10 (provides specific examples like GPT-4, BERT)</li>
+<li><strong>Scope Limitation</strong>: 10 (well-defined technical scope)</li>
+<li><strong>Formatting</strong>: 8 (clear but not in list format)</li>
+<li><strong>Relevance</strong>: 10 (relevant to technical understanding of LLMs)</li>
+<li><strong>Creativity</strong>: 7 (technical but not highly creative)</li>
+</ol>
+</section>
+<section id="total-score-93100" class="level4">
+<h4 class="anchored" data-anchor-id="total-score-93100">Total Score: 93/100</h4>
+</section>
+</section>
+<section id="prompt-3-impact-and-ethical-considerations-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-3-impact-and-ethical-considerations-1">Prompt 3: Impact and Ethical Considerations</h3>
+<p>“Write a comprehensive post discussing the impact of Large Language Models (LLMs) on society and the ethical considerations associated with their use. Cover topics such as data privacy, potential biases in LLMs, and the implications for various sectors like healthcare, education, and entertainment. Include real-world examples and potential solutions to address ethical challenges.”</p>
+<section id="scoring-3" class="level4">
+<h4 class="anchored" data-anchor-id="scoring-3">Scoring</h4>
+<ol type="1">
+<li><strong>Clarity</strong>: 10 (very clear)</li>
+<li><strong>Context</strong>: 10 (provides excellent context)</li>
+<li><strong>Specificity</strong>: 10 (specific ethical aspects covered)</li>
+<li><strong>Directness</strong>: 10 (direct request)</li>
+<li><strong>Tone and Style</strong>: 8 (comprehensive but tone/style not explicitly mentioned)</li>
+<li><strong>Examples</strong>: 9 (mentions real-world examples but not specific ones)</li>
+<li><strong>Scope Limitation</strong>: 10 (well-defined scope covering ethical implications)</li>
+<li><strong>Formatting</strong>: 8 (clear but not in list format)</li>
+<li><strong>Relevance</strong>: 10 (relevant to societal impact and ethics)</li>
+<li><strong>Creativity</strong>: 8 (covers ethical challenges creatively)</li>
+</ol>
+</section>
+<section id="total-score-93100-1" class="level4">
+<h4 class="anchored" data-anchor-id="total-score-93100-1">Total Score: 93/100</h4>
+</section>
+</section>
+<section id="summary" class="level3">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<ul>
+<li><strong>Prompt 1</strong>: 90/100</li>
+<li><strong>Prompt 2</strong>: 93/100</li>
+<li><strong>Prompt 3</strong>: 93/100</li>
+</ul>
+<p>All three prompts are strong, with Prompts 2 and 3 scoring slightly higher due to their specificity and relevance to technical and ethical aspects, respectively.</p>
+</section>
+<section id="refine-each-prompt-to-score-better" class="level3">
+<h3 class="anchored" data-anchor-id="refine-each-prompt-to-score-better">refine each prompt to score better</h3>
+<p>Here are the refined versions of each prompt to improve their scores:</p>
+</section>
+<section id="refined-prompt-1-informative-overview" class="level3">
+<h3 class="anchored" data-anchor-id="refined-prompt-1-informative-overview">Refined Prompt 1: Informative Overview</h3>
+<p>“Write a detailed and engaging post explaining what Large Language Models (LLMs) are. Include their history, development, key features, and applications in various industries. Highlight the significance of LLMs in modern AI research and provide examples of popular LLMs such as GPT-4, BERT, and T5. Use a professional and informative tone, and include bullet points or subheadings for better readability.”</p>
+<section id="scoring-4" class="level4">
+<h4 class="anchored" data-anchor-id="scoring-4">Scoring</h4>
+<ol type="1">
+<li><strong>Clarity</strong>: 10 (very clear)</li>
+<li><strong>Context</strong>: 9 (good background information)</li>
+<li><strong>Specificity</strong>: 9 (specific aspects like history, development, features, applications)</li>
+<li><strong>Directness</strong>: 10 (direct request)</li>
+<li><strong>Tone and Style</strong>: 10 (professional and informative tone specified)</li>
+<li><strong>Examples</strong>: 10 (provides specific examples like GPT-4, BERT, T5)</li>
+<li><strong>Scope Limitation</strong>: 9 (well-defined scope covering multiple aspects)</li>
+<li><strong>Formatting</strong>: 10 (suggests bullet points or subheadings)</li>
+<li><strong>Relevance</strong>: 10 (relevant to understanding LLMs)</li>
+<li><strong>Creativity</strong>: 8 (informative and engaging)</li>
+</ol>
+</section>
+<section id="total-score-95100" class="level4">
+<h4 class="anchored" data-anchor-id="total-score-95100">Total Score: 95/100</h4>
+</section>
+</section>
+<section id="refined-prompt-2-technical-deep-dive" class="level3">
+<h3 class="anchored" data-anchor-id="refined-prompt-2-technical-deep-dive">Refined Prompt 2: Technical Deep Dive</h3>
+<p>“Create a detailed technical blog post that delves into the architecture and functioning of Large Language Models (LLMs). Discuss how LLMs are trained, the underlying neural network structures, and the challenges faced during their development. Include detailed discussions on concepts like transformers, attention mechanisms, and fine-tuning, using examples from well-known models like GPT-4 and BERT. Use a technical and precise tone, and organize the content with subheadings and bullet points.”</p>
+<section id="scoring-5" class="level4">
+<h4 class="anchored" data-anchor-id="scoring-5">Scoring</h4>
+<ol type="1">
+<li><strong>Clarity</strong>: 10 (very clear)</li>
+<li><strong>Context</strong>: 9 (good technical context)</li>
+<li><strong>Specificity</strong>: 10 (specific technical aspects covered)</li>
+<li><strong>Directness</strong>: 10 (direct request)</li>
+<li><strong>Tone and Style</strong>: 10 (technical and precise tone specified)</li>
+<li><strong>Examples</strong>: 10 (provides specific examples like GPT-4, BERT)</li>
+<li><strong>Scope Limitation</strong>: 10 (well-defined technical scope)</li>
+<li><strong>Formatting</strong>: 10 (suggests subheadings and bullet points)</li>
+<li><strong>Relevance</strong>: 10 (relevant to technical understanding of LLMs)</li>
+<li><strong>Creativity</strong>: 8 (technical but well-structured)</li>
+</ol>
+</section>
+<section id="total-score-97100" class="level4">
+<h4 class="anchored" data-anchor-id="total-score-97100">Total Score: 97/100</h4>
+</section>
+</section>
+<section id="refined-prompt-3-impact-and-ethical-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="refined-prompt-3-impact-and-ethical-considerations">Refined Prompt 3: Impact and Ethical Considerations</h3>
+<p>“Write a comprehensive and thought-provoking post discussing the impact of Large Language Models (LLMs) on society and the ethical considerations associated with their use. Cover topics such as data privacy, potential biases in LLMs, and the implications for various sectors like healthcare, education, and entertainment. Include real-world examples, specific cases, and potential solutions to address ethical challenges. Use a balanced and reflective tone, and organize the content with subheadings and bullet points for clarity.”</p>
+<section id="scoring-6" class="level4">
+<h4 class="anchored" data-anchor-id="scoring-6">Scoring</h4>
+<ol type="1">
+<li><strong>Clarity</strong>: 10 (very clear)</li>
+<li><strong>Context</strong>: 10 (excellent context)</li>
+<li><strong>Specificity</strong>: 10 (specific ethical aspects covered)</li>
+<li><strong>Directness</strong>: 10 (direct request)</li>
+<li><strong>Tone and Style</strong>: 10 (balanced and reflective tone specified)</li>
+<li><strong>Examples</strong>: 10 (mentions real-world examples and specific cases)</li>
+<li><strong>Scope Limitation</strong>: 10 (well-defined scope covering ethical implications)</li>
+<li><strong>Formatting</strong>: 10 (suggests subheadings and bullet points)</li>
+<li><strong>Relevance</strong>: 10 (relevant to societal impact and ethics)</li>
+<li><strong>Creativity</strong>: 8 (covers ethical challenges creatively)</li>
+</ol>
+</section>
+<section id="total-score-98100" class="level4">
+<h4 class="anchored" data-anchor-id="total-score-98100">Total Score: 98/100</h4>
+</section>
+</section>
+<section id="summary-of-refined-prompts" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-refined-prompts">Summary of Refined Prompts</h3>
+<ul>
+<li><strong>Refined Prompt 1</strong>: 95/100</li>
+<li><strong>Refined Prompt 2</strong>: 97/100</li>
+<li><strong>Refined Prompt 3</strong>: 98/100</li>
+</ul>
+<p>These refinements aim to improve the prompts’ scores by specifying tone and style, encouraging better organization with subheadings and bullet points, and enhancing clarity and engagement.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
